@@ -7,3 +7,5 @@ class ProfileController {
       }
    }
 }
+
+//j'ai un message qui s'affiche à la ligne 4 m'indiquant"index accesses the super-global variable $_SERVER" ?!
