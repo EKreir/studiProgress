@@ -1,5 +1,5 @@
 <?php
-require_once "/home/eliess/studiwork/MVC/models/user.php";
+require_once "models/user.php";
 $email = $_POST['email'];
 $user = new User($email);
 ?>
@@ -15,6 +15,6 @@ $user = new User($email);
         <ul>
             <li>Email : <?php echo $user->getEmail(); ?></li>
         </ul>
-        <a href="<?php echo BASE_URL; ?> /Logout">Se déconnecter</a>
+        <a href="<?php echo BASE_URL; ?> /logoutController.php">Se déconnecter</a>
     </body>
 </html>
