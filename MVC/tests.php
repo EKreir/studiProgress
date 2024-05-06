@@ -1,14 +1,14 @@
 <?php
 
-define("BASE_URL", './home/eliess/studiwork/MVC');
+define("BASE_URL", '../MVC');
 
 //inclusion des classes
 
-require_once './home/eliess/studiwork/MVC/models/router.php';
-require_once './home/eliess/studiwork/MVC/models/user.php';
-require_once './home/eliess/studiwork/MVC/controllers/homeController.php';
-require_once './home/eliess/studiwork/MVC/controllers/profileController.php';
-require_once './home/eliess/studiwork/MVC/controllers/logoutController.php';
+require_once 'models/router.php';
+require_once 'models/user.php';
+require_once 'controllers/homeController.php';
+require_once 'controllers/profileController.php';
+require_once 'controllers/logoutController.php';
 
 // instanciation du routeur
 
@@ -16,9 +16,9 @@ $router = new Router();
 
 // Définition des routes
 
-$router->addRoute('GET', BASE_URL.'/', 'HomeController', 'index');
-$router->addRoute('POST', BASE_URL.'/profile', 'ProfileController', 'index');
-$router->addRoute('GET', BASE_URL.'/logout', 'LogoutController', 'index');
+$router->addRoute('GET', BASE_URL.'/homeController.php', 'HomeController', 'index');
+$router->addRoute('POST', BASE_URL.'/profileController.php', 'ProfileController', 'index');
+$router->addRoute('GET', BASE_URL.'/logoutController.php', 'LogoutController', 'index');
 
 
 
